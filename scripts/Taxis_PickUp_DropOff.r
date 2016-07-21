@@ -81,7 +81,7 @@ taxi_data$DropOffLongitude <- as.factor(taxi_data$DropOffLongitude)
 taxi_data$DropOffLatitude <- as.factor(taxi_data$DropOffLatitude)
 
 # Plot Pickup and DropOff locations.
-ggplot(subset(taxi_data[1:10,],POLYLINE != ""), aes(x = as.numeric(as.character(PickUpLongitude)), y = as.numeric(as.character(PickUpLatitude)))) +
+ggplot(subset(taxi_data[1:10000,],POLYLINE != ""), aes(x = as.numeric(as.character(PickUpLongitude)), y = as.numeric(as.character(PickUpLatitude)))) +
   #stat_count(width = 0.5) +
   #scale_x_continuous(breaks=c(1:250)*10) +
   #theme(axis.text.x=element_text(angle=0,hjust=0.5,vjust=0)) +
